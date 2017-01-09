@@ -1,0 +1,13 @@
+Package: slurmr
+Type: Package
+Title: Convinience Package to handle batch processing in slurm systems
+Version: 0.1
+Date: 2017-01-09
+Author: Mans Magnusson
+Maintainer: Mans Magnusson <mons.magnusson@gmail.com>
+Description: Handle processing of batch files in slurm systems.
+License: MIT
+Imports:
+    checkmate,
+    stringr
+RoxygenNote: 5.0.1
