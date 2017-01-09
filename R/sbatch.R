@@ -7,15 +7,14 @@
 #'
 #' @param code Code to run in SBATCH. Every row in batch script is a char element.
 #' @param add_status Add code to print out status for run.
-#' @param path Path where write out SBATCH files e.t.c.
-#' @param _J See details.
-#' @param _t See details.
-#' @param _A See details.
-#' @param _n See details.
-#' @param _n See details.
-#' @param __mem See details.
-#' @param __mail_type See details.
-#' @param __output See details.
+#' @param J_ See details.
+#' @param t_ See details.
+#' @param A_ See details.
+#' @param n_ See details.
+#' @param mem__ See details.
+#' @param mail_type__ See details.
+#' @param mail_user__ See details.
+#' @param output__ See details.
 #' 
 #' @return 
 #' \code{sbatch} object
@@ -23,7 +22,6 @@
 #' @export
 sbatch <- function(code = "", 
                    add_status = TRUE,
-                   path = "",
                    J_ = NULL, 
                    t_ = 1, 
                    A_ = NULL, 
@@ -36,7 +34,6 @@ sbatch <- function(code = "",
   # Create Object
   sb_obj <- list(code = code, 
                  add_status = add_status,
-                 path = path,
                  J_ = J_,
                  t_ = t_,
                  A_ = A_,

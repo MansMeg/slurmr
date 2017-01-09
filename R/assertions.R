@@ -1,5 +1,6 @@
 #' Assert a sbtach object
 #' 
+#' @param x a object to assert is a \code{sbatch} object.
 #' 
 assert_sbatch <- function(x){
   checkmate::assert_class(x, "sbatch")

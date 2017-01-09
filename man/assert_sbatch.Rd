@@ -6,6 +6,9 @@
 \usage{
 assert_sbatch(x)
 }
+\arguments{
+\item{x}{a object to assert is a \code{sbatch} object.}
+}
 \description{
 Assert a sbtach object
 }

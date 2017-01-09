@@ -4,32 +4,30 @@
 \alias{sbatch}
 \title{Sbatch object constructor}
 \usage{
-sbatch(code = "", add_status = TRUE, path = "", J_ = NULL, t_ = 1,
-  A_ = NULL, n_ = NULL, mem__ = NULL, mail_type__ = NULL,
-  mail_user__ = NULL, output__ = "slurm-\%j")
+sbatch(code = "", add_status = TRUE, J_ = NULL, t_ = 1, A_ = NULL,
+  n_ = NULL, mem__ = NULL, mail_type__ = NULL, mail_user__ = NULL,
+  output__ = "slurm-\%j")
 }
 \arguments{
 \item{code}{Code to run in SBATCH. Every row in batch script is a char element.}
 
 \item{add_status}{Add code to print out status for run.}
 
-\item{path}{Path where write out SBATCH files e.t.c.}
+\item{J_}{See details.}
 
-\item{_J}{See details.}
+\item{t_}{See details.}
 
-\item{_t}{See details.}
+\item{A_}{See details.}
 
-\item{_A}{See details.}
+\item{n_}{See details.}
 
-\item{_n}{See details.}
+\item{mem__}{See details.}
 
-\item{_n}{See details.}
+\item{mail_type__}{See details.}
 
-\item{__mem}{See details.}
+\item{mail_user__}{See details.}
 
-\item{__mail_type}{See details.}
-
-\item{__output}{See details.}
+\item{output__}{See details.}
 }
 \value{
 \code{sbatch} object
