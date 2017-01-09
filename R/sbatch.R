@@ -29,7 +29,7 @@ sbatch <- function(code = "",
                    mem__ = NULL,
                    mail_type__ = NULL, 
                    mail_user__ = NULL, 
-                   output__ = "slurm-%j"){
+                   output__ = "slurm-%j.out"){
   
   # Create Object
   sb_obj <- list(code = code, 

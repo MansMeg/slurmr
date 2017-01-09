@@ -13,9 +13,9 @@ print.sbatch <- function(x, ...){
   if(!is.null(x$mail_type__)) cat(paste0("#SBATCH --mail-type=", x$mail_type__, " \n"))  
   cat(paste0("#SBATCH --output=\"", x$output__, "\" \n"))
   
-  if(x$verbose){
+  if(x$add_status){
     cat("\n")
-    cat("# Verbose sbatch script \n")
+    cat("# Status sbatch script run \n")
     cat("echo \"username: $USER\" \n")
     cat("date \n")
     cat("projinfo \n")

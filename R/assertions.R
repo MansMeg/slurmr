@@ -7,8 +7,7 @@ assert_sbatch <- function(x){
 
   checkmate::assert_character(x$code)
   checkmate::assert_flag(x$add_status)
-  if(x$path != "") checkmate::assert_path_for_output(x$path)
-
+  
   checkmate::assert_string(x$J_, null.ok = TRUE)
   checkmate::assert_number(x$t_)
   checkmate::assert_string(x$A_, null.ok = TRUE)

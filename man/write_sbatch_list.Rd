@@ -4,12 +4,14 @@
 \alias{write_sbatch_list}
 \title{Write a list of sbatch files to folder}
 \usage{
-write_sbatch_list(sbatch_list, path = "")
+write_sbatch_list(sbatch_list, path = "", overwrite = FALSE)
 }
 \arguments{
 \item{sbatch_list}{A \code{list} with \code{sbatch} objects.}
 
 \item{path}{A \code{list} with \code{sbatch} objects.}
+
+\item{overwrite}{Should files be overwritten?}
 }
 \description{
 Write a list of sbatch files to folder

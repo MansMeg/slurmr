@@ -6,7 +6,7 @@
 \usage{
 sbatch(code = "", add_status = TRUE, J_ = NULL, t_ = 1, A_ = NULL,
   n_ = NULL, mem__ = NULL, mail_type__ = NULL, mail_user__ = NULL,
-  output__ = "slurm-\%j")
+  output__ = "slurm-\%j.out")
 }
 \arguments{
 \item{code}{Code to run in SBATCH. Every row in batch script is a char element.}
