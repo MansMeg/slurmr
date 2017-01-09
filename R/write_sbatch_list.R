@@ -25,7 +25,7 @@ write_sbatch_list <- function(sbatch_list, path="", overwrite = FALSE){
   }
 
   writeLines(c("# Run all batch files", paste("sbatch", file_names)), 
-             con = "run_all.sh")  
+             con = paste0(path, "run_all.sh"))
 
 }
   
