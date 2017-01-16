@@ -7,6 +7,8 @@ print.sbatch <- function(x, ...){
   cat(paste0("#SBATCH -t ", num_to_time(x$t_), " \n"))
   if(!is.null(x$A_)) cat(paste0("#SBATCH -A ", x$A_, " \n"))
   if(!is.null(x$n_)) cat(paste0("#SBATCH -n ", x$n_, " \n"))
+  if(!is.null(x$n_)) cat(paste0("#SBATCH -N ", x$N_, " \n"))
+  if(x$exclusive__) cat("#SBATCH --exclusive")
   
   if(!is.null(x$mem__)) cat(paste0("#SBATCH --mem=", x$mem__, " \n"))
   if(!is.null(x$mail_user__)) cat(paste0("#SBATCH --mail-user=", x$mail_user__, " \n"))  

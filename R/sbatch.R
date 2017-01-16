@@ -4,14 +4,15 @@
 #' See slurm details om arguments. Use \code{sbatch -help} for details. 
 #' The parameters implemented can be seen below.
 #'
-#'
 #' @param code Code to run in SBATCH. Every row in batch script is a char element.
 #' @param add_status Add code to print out status for run.
 #' @param J_ See details.
 #' @param t_ See details.
 #' @param A_ See details.
 #' @param n_ See details.
-#' @param mem__ See details.
+#' @param N_ See details.
+#' @param exclusive__ See details.
+#' @param mem__ See details. Memory allocation in MB.
 #' @param mail_type__ See details.
 #' @param mail_user__ See details.
 #' @param output__ See details.
@@ -26,6 +27,8 @@ sbatch <- function(code = "",
                    t_ = 1, 
                    A_ = NULL, 
                    n_ = NULL, 
+                   N_ = NULL,                    
+                   exclusive__ = FALSE,
                    mem__ = NULL,
                    mail_type__ = NULL, 
                    mail_user__ = NULL, 
@@ -38,6 +41,8 @@ sbatch <- function(code = "",
                  t_ = t_,
                  A_ = A_,
                  n_ = n_,
+                 N_ = N_,                    
+                 exclusive__ = exclusive__,                 
                  mem__ = mem__,
                  mail_type__ = mail_type__,
                  mail_user__ = mail_user__, 
