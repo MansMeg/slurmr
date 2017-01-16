@@ -8,7 +8,7 @@ print.sbatch <- function(x, ...){
   if(!is.null(x$A_)) cat(paste0("#SBATCH -A ", x$A_, " \n"))
   if(!is.null(x$n_)) cat(paste0("#SBATCH -n ", x$n_, " \n"))
   
-  if(!is.null(x$mem__)) cat(paste0("#SBATCH --mem=", x$n_, " \n"))
+  if(!is.null(x$mem__)) cat(paste0("#SBATCH --mem=", x$mem__, " \n"))
   if(!is.null(x$mail_user__)) cat(paste0("#SBATCH --mail-user=", x$mail_user__, " \n"))  
   if(!is.null(x$mail_type__)) cat(paste0("#SBATCH --mail-type=", x$mail_type__, " \n"))  
   cat(paste0("#SBATCH --output=\"", x$output__, "\" \n"))
