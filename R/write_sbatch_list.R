@@ -5,7 +5,7 @@
 #' bash script that start all batch scripts.
 #'
 #' @param sbatch_list A \code{list} with \code{sbatch} objects.
-#' @param path A \code{list} with \code{sbatch} objects.
+#' @param path Where to write slurm files.
 #' @param overwrite Should files be overwritten?
 #'
 #' @export
@@ -24,7 +24,7 @@ write_sbatch_list <- function(sbatch_list, path="", overwrite = FALSE){
     file_names[i] <- file_name
   }
 
-  writeLines(c("# Run all batch files", paste("sbatch", file_names)), 
+  writeLines(c("# Run all sbatch files", paste("sbatch", file_names)), 
              con = paste0(path, "run_all.sh"))
 
 }
