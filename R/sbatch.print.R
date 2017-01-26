@@ -22,6 +22,7 @@ print.sbatch <- function(x, ...){
     cat("date \n")
     cat("projinfo \n")
     cat("git log -n 1 \n")
+    cat("pwd \n")
     cat("\n")
   }
   
