@@ -9,7 +9,7 @@ write_sbatch_list(sbatch_list, path = "", overwrite = FALSE)
 \arguments{
 \item{sbatch_list}{A \code{list} with \code{sbatch} objects.}
 
-\item{path}{A \code{list} with \code{sbatch} objects.}
+\item{path}{Where to write slurm files.}
 
 \item{overwrite}{Should files be overwritten?}
 }

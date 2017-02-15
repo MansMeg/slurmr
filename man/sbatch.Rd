@@ -5,8 +5,8 @@
 \title{Sbatch object constructor}
 \usage{
 sbatch(code = "", add_status = TRUE, J_ = NULL, t_ = 1, A_ = NULL,
-  n_ = NULL, mem__ = NULL, mail_type__ = NULL, mail_user__ = NULL,
-  output__ = "slurm-\%j.out")
+  n_ = NULL, N_ = NULL, exclusive__ = FALSE, mem__ = NULL,
+  mail_type__ = NULL, mail_user__ = NULL, output__ = "slurm-\%j.out")
 }
 \arguments{
 \item{code}{Code to run in SBATCH. Every row in batch script is a char element.}
@@ -21,7 +21,11 @@ sbatch(code = "", add_status = TRUE, J_ = NULL, t_ = 1, A_ = NULL,
 
 \item{n_}{See details.}
 
-\item{mem__}{See details.}
+\item{N_}{See details.}
+
+\item{exclusive__}{See details.}
+
+\item{mem__}{See details. Memory allocation in MB.}
 
 \item{mail_type__}{See details.}
 
