@@ -10,6 +10,7 @@
 #'
 #' @export
 write_sbatch_list <- function(sbatch_list, path="", overwrite = FALSE){
+  checkmate::assert_class(sbatch_list, classes = "list")
   checkmate::assert(all(unlist(lapply(lapply(sbatch_list, class), FUN=function(x) x[[1]])) == "sbatch"))
   if(path != "") checkmate::assert_path_for_output(path, overwrite = overwrite)
   
