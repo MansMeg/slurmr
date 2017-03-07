@@ -20,13 +20,14 @@ The package is built upon the object `sbatch` that is one sbatch script file. To
 #SBATCH -t 01:00:00 
 #SBATCH --output="slurm-%j.out" 
 
-# Status sbatch script run 
+# Run status sbatch script  
 echo "username: $USER" 
 date 
 projinfo 
 git log -n 1 
 pwd 
 
+# Main code 
 Rscript -e "print('Hello World')"
 ```
 

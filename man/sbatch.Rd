@@ -11,7 +11,7 @@ sbatch(code = "", add_status = TRUE, J_ = NULL, t_ = 1, A_ = NULL,
 \arguments{
 \item{code}{Code to run in SBATCH. Every row in batch script is a char element.}
 
-\item{add_status}{Add code to print out status for run.}
+\item{add_status}{Add code to print out verbose status for run.}
 
 \item{J_}{See details.}
 

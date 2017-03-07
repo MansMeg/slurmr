@@ -17,15 +17,15 @@ print.sbatch <- function(x, ...){
   
   if(x$add_status){
     cat("\n")
-    cat("# Status sbatch script run \n")
+    cat("# Run status sbatch script  \n")
     cat("echo \"username: $USER\" \n")
     cat("date \n")
     cat("projinfo \n")
     cat("git log -n 1 \n")
     cat("pwd \n")
-    cat("\n")
   }
   
+  cat("\n# Main code \n")
   for(i in seq_along(x$code)){
     cat(x$code[i])
     cat("\n")

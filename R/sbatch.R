@@ -5,7 +5,7 @@
 #' The parameters implemented can be seen below.
 #'
 #' @param code Code to run in SBATCH. Every row in batch script is a char element.
-#' @param add_status Add code to print out status for run.
+#' @param add_status Add code to print out verbose status for run.
 #' @param J_ See details.
 #' @param t_ See details.
 #' @param A_ See details.
