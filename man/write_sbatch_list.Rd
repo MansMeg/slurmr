@@ -20,4 +20,3 @@ Write a list of sbatch files to folder
 Function that write out sbatch files together with a \code{run_all.sh} 
 bash script that start all batch scripts.
 }
-

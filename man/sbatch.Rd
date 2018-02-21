@@ -4,8 +4,8 @@
 \alias{sbatch}
 \title{Sbatch object constructor}
 \usage{
-sbatch(code = "", add_status = TRUE, J_ = NULL, t_ = 1, A_ = NULL,
-  n_ = NULL, N_ = NULL, exclusive__ = FALSE, mem__ = NULL,
+sbatch(code = "", add_status = TRUE, A_ = NULL, C_ = NULL, J_ = NULL,
+  t_ = 1, n_ = NULL, N_ = NULL, exclusive__ = FALSE, mem__ = NULL,
   mail_type__ = NULL, mail_user__ = NULL, output__ = "slurm-\%j.out")
 }
 \arguments{
@@ -13,11 +13,13 @@ sbatch(code = "", add_status = TRUE, J_ = NULL, t_ = 1, A_ = NULL,
 
 \item{add_status}{Add code to print out verbose status for run.}
 
+\item{A_}{See details.}
+
+\item{C_}{See details.}
+
 \item{J_}{See details.}
 
 \item{t_}{See details.}
-
-\item{A_}{See details.}
 
 \item{n_}{See details.}
 
@@ -43,4 +45,3 @@ Sbatch object constructor
 See slurm details om arguments. Use \code{sbatch -help} for details. 
 The parameters implemented can be seen below.
 }
-

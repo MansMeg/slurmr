@@ -36,5 +36,6 @@ See documentation for all installed arguments to the constructor. The main argum
 To write the files to a folder together with a `run_all.sh` script to submit all sbatch files use: 
 
 ```
-> slurmr::slurmr::write_sbatch_list(a_job)
+> slurmr::write_sbatch_list(a_job)
 ```
+

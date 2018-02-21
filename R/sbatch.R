@@ -6,9 +6,10 @@
 #'
 #' @param code Code to run in SBATCH. Every row in batch script is a char element.
 #' @param add_status Add code to print out verbose status for run.
+#' @param A_ See details.
 #' @param J_ See details.
 #' @param t_ See details.
-#' @param A_ See details.
+#' @param C_ See details.
 #' @param n_ See details.
 #' @param N_ See details.
 #' @param exclusive__ See details.
@@ -23,9 +24,10 @@
 #' @export
 sbatch <- function(code = "", 
                    add_status = TRUE,
+                   A_ = NULL,
+                   C_ = NULL,
                    J_ = NULL, 
                    t_ = 1, 
-                   A_ = NULL, 
                    n_ = NULL, 
                    N_ = NULL,                    
                    exclusive__ = FALSE,
@@ -40,6 +42,7 @@ sbatch <- function(code = "",
                  J_ = J_,
                  t_ = t_,
                  A_ = A_,
+                 C_ = C_,                 
                  n_ = n_,
                  N_ = N_,                    
                  exclusive__ = exclusive__,                 

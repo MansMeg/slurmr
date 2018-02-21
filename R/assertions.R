@@ -11,6 +11,7 @@ assert_sbatch <- function(x){
   checkmate::assert_string(x$J_, null.ok = TRUE)
   checkmate::assert_number(x$t_)
   checkmate::assert_string(x$A_, null.ok = TRUE)
+  checkmate::assert_string(x$C_, null.ok = TRUE)
   checkmate::assert_integerish(x$n_, null.ok = TRUE)
   checkmate::assert_integerish(x$N_, null.ok = TRUE)
   checkmate::assert_number(x$mem__, null.ok = TRUE)

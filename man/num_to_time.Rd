@@ -15,4 +15,3 @@ Hours in slurm format
 \description{
 Convert hours in numerical format to slurm time format
 }
-

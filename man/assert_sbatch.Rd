@@ -12,4 +12,3 @@ assert_sbatch(x)
 \description{
 Assert a sbtach object
 }
-
